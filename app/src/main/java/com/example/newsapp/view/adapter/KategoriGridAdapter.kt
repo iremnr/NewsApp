@@ -1,15 +1,9 @@
-package com.example.newsapp.adapter
+package com.example.newsapp.view.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.recyclerview.widget.RecyclerView
-import com.example.newsapp.R
 import com.example.newsapp.databinding.KategoriRecycleRowBinding
-import com.example.newsapp.model.Kategori
 
 //(val kategoriList : ArrayList<Kategori>)
 
@@ -33,7 +27,7 @@ class KategoriGridAdapter: RecyclerView.Adapter<KategoriGridAdapter.KategoriView
     }
     //val kategoriList = ArrayList<Kategori>()
 
-    class KategoriViewHolder(val binding : KategoriRecycleRowBinding) : RecyclerView.ViewHolder(binding.root) {
+    class KategoriViewHolder(var view : KategoriRecycleRowBinding) : RecyclerView.ViewHolder(view.root) {
         //val textView : TextView = itemView.findViewById(R.id.kateori_rwText)
     }
 
@@ -48,7 +42,9 @@ class KategoriGridAdapter: RecyclerView.Adapter<KategoriGridAdapter.KategoriView
     override fun onBindViewHolder(holder: KategoriViewHolder, position: Int) {
         //holder.textView.text = kategoriList.get(position).category
 
-        holder.binding.kateoriRwText.text = kategoriList[position]
+        //holder.view.kateoriRwText.text = kategoriList[position]
+
+        val categoryData = kategoriList[position]
     }
 
     override fun getItemCount(): Int {

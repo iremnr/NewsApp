@@ -3,46 +3,44 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".view.KategorilistFragment">
+    tools:context=".view.KategoriListFragment"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
-
-
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:viewBindingIgnore="true">
+        android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+            android:id="@+id/category_recycler"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
         <TextView
-            android:id="@+id/kategoriListHataMesaji"
+            android:id="@+id/categoryErrorMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="HATA! Tekrar deneyiniz!"
-            android:textSize="20sp"
+            android:text="HATA! Tekrar deneyiniz..."
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"></TextView>
 
         <ProgressBar
-            android:id="@+id/kategoriProgressBar"
+            android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </ProgressBar>
+            app:layout_constraintTop_toTopOf="parent"></ProgressBar>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
