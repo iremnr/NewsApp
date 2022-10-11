@@ -3,12 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Cimbom/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_kategori_list.xml" value="0.28041714947856317" />
+        <entry key="..\:/Users/Cimbom/AndroidStudioProjects/NewsApp/app/src/main/res/layout-land/fragment_kategori_list.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Cimbom/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Cimbom/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_haber_detay.xml" value="0.16983695652173914" />
+        <entry key="..\:/Users/Cimbom/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_haber_list.xml" value="0.536" />
+        <entry key="..\:/Users/Cimbom/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_kategori_list.xml" value="0.1" />
         <entry key="..\:/Users/Cimbom/AndroidStudioProjects/NewsApp/app/src/main/res/layout/haber_recycler_row.xml" value="0.15942028985507245" />
-        <entry key="..\:/Users/Cimbom/AndroidStudioProjects/NewsApp/app/src/main/res/layout/kategori_recycle_row.xml" value="0.152" />
+        <entry key="..\:/Users/Cimbom/AndroidStudioProjects/NewsApp/app/src/main/res/layout/kategori_recycle_row.xml" value="0.1" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

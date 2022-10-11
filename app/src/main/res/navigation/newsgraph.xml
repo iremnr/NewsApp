@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newsgraph"
+    app:startDestination="@id/kategoriListFragment">
+
+    <fragment
+        android:id="@+id/kategoriListFragment"
+        android:name="com.example.newsapp.view.KategoriListFragment"
+        android:label="KategoriListFragment" >
+        <action
+            android:id="@+id/action_kategoriListFragment_to_haberListFragment"
+            app:destination="@id/haberListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/haberListFragment"
+        android:name="com.example.newsapp.view.HaberListFragment"
+        android:label="HaberListFragment" >
+        <action
+            android:id="@+id/action_haberListFragment_to_haberDetayFragment"
+            app:destination="@id/haberDetayFragment" />
+        <action
+            android:id="@+id/action_haberListFragment_to_kategoriListFragment"
+            app:destination="@id/kategoriListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/haberDetayFragment"
+        android:name="com.example.newsapp.view.HaberDetayFragment"
+        android:label="fragment_haber_detay"
+        tools:layout="@layout/fragment_haber_detay" >
+        <action
+            android:id="@+id/action_haberDetayFragment_to_haberListFragment"
+            app:destination="@id/haberListFragment" />
+    </fragment>
+</navigation>
