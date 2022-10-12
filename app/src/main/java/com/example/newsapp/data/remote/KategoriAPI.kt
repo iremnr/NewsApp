@@ -5,7 +5,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface CategoryAPI {
+interface KategoriAPI {
 
     @GET("news")
     fun getCategory(
